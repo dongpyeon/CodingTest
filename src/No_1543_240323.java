@@ -12,7 +12,7 @@ public class No_1543_240323 {
 
         for (int i=0; i<new_word.length(); i++)
         {
-            if(new_word.charAt(i) == "0")
+            if(new_word.charAt(i) == '0')
                 count++;
         }
 
