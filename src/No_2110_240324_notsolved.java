@@ -17,11 +17,6 @@ public class No_2110_240324_notsolved {
 
         Arrays.sort(arr);
 
-        for (int i=0; i<home; i++)
-        {
-           System.out.println(arr[i]);
-        }
-
 
     }
 }
