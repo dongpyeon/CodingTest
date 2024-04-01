@@ -13,10 +13,11 @@ public class No_25206_240331 {
 
         for (int i = 0; i < 20; i++) {
             str[i] = bfr.readLine();
-            StringTokenizer st = new StringTokenizer(str[i], " ");
-            String subject = st.nextToken();
-            double score = Double.parseDouble(st.nextToken());
-            String grade = st.nextToken();
+            String[] parts = str[i].split(" ");
+            String subject = parts[0];
+            double score = Double.parseDouble(parts[1]);
+            String grade = parts[2];
+
 
             for (int j = 0; j < 10; j++) {
                 if (grade.equals(gradeList[j])) {
