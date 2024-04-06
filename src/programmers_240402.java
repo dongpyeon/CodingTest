@@ -18,6 +18,6 @@ public class programmers_240402 {
         }
 
         return answer;
-        //코딩테스트 연습 > 해시 > 완주하지 못한 선수
+        //코딩테스트 연습 > 스택/큐 > 같은 숫자는 싫어
     }
 }
