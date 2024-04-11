@@ -5,7 +5,7 @@ class programmers_240410 {
         int answer = 0;
         Arrays.sort(citations);
         int max_val = citations[citations.length-1];
-        for(int i=0; i<citations.length; i++)
+        for(int i=0; i<max_val; i++)
         {
             int upCount =0;
             int downCount=0;
@@ -19,7 +19,7 @@ class programmers_240410 {
                 else
                     equalCount++;
 
-            if(i<=upCount && i>=downCount && answer<i)
+            if(i<=upCount+equalCount && i>=downCount+equalCount)
                 answer=i;
         }
 
