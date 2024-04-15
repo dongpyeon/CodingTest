@@ -1,3 +1,4 @@
+import java.util.*;
 class programmers_240415 {
     public int[] solution(int brown, int yellow) {
 
