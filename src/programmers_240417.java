@@ -2,31 +2,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 class programmers_240417 {
-    public int[] solution(int brown, int yellow) {
+    class Solution {
+        public int solution(String t, String p) {
+            int len = p.length();
+            int go = 0;
+            int answer = 0;
+            long p_val = Long.parseLong(p);
 
-        int x=0;
-        int y=0;
-        int z=0;
-        int all = brown+yellow;
-        List<Integer> list = new ArrayList<>();
+            while(true)
+            {
+                if((go+len) > t.length())
+                    break;
 
-        //일단 약수여야되고
-        //세로 즉 y 제곱이가 옐로보다 커야해
-        //이렇게함해보자
-        while(z!=all)
-        {
-            z++;
-            if(0==(all%z))
-                list.add(z);
+                long t_val=Long.parseLong(t.substring(go,go+len));
+                if(t_val <= p_val)
+                    answer++;
+                go++;
+            }
+
+            return answer;
         }
-        int[] answer = [list.size()];
-        for(int a : list)
-            answer[i]=a;
-
-
-
-        return answer;
-
     }
     //코딩테스트 연습 > 연습문제 > 크기가 작은 부분 문자열
 }
