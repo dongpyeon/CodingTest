@@ -13,7 +13,7 @@ class programmers_240419 {
                 food[i]-=1;
         }
 
-        for(int j=1; j<4; j++)
+        for(int j=1; j<food.length; j++)
         {
             for(int k=0; k<food[j]/2; k++)
             {
