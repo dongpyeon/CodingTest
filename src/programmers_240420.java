@@ -6,26 +6,21 @@ class programmers_240420 {
 
         for(String word : goal)
         {
-            int hit =0;
-
             if(cards1[cards1count].equals(word))
             {
                 cards1count++;
-                hit++;
             }
 
-            if(cards2[cards2count].equals(word))
+            else if(cards2[cards2count].equals(word))
             {
                 cards2count++;
-                hit++;
             }
 
-            if(hit==0)
+            else
             {
                 answer="No";
                 break;
             }
-
         }
         return answer;
     }
